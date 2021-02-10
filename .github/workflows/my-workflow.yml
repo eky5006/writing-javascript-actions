@@ -21,5 +21,6 @@ jobs:
       - name: create-issue
         uses: ./.github/actions/issue-maker
         with:
+          issue-title: "Consuming action outputs"
           repo-token: ${{secrets.GITHUB_TOKEN}}
           joke: ${{steps.jokes.outputs.joke-output}}
